@@ -1,3 +1,10 @@
+function redirect(fromPage, toPage) {
+    console.log("first")
+    let currentPage = window.location.href
+    currentPage = currentPage.replace(fromPage, toPage)
+    window.location.replace(currentPage)
+}
+
 function showModal() {
     document.getElementsByClassName("modal-back")[0].style.display = "block"
 }
@@ -70,3 +77,12 @@ function createPost() {
         });
     }
 }
+
+let userName = JSON.parse(localStorage.getItem("userData")) || [{firstName : "Alexender", surName : "Pope"}]
+userName = userName[userName.length - 1].firstName + " " + userName[userName.length - 1].surName
+
+let profileName = document.getElementById("profile-name")
+profileName.innerText = userName
+
+let modalTextarea = document.getElementById("modal-desc")
+modalTextarea.placeholder = `What's on your mind, ${userName}?`

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <main class="main-signup">
+        <img src="../assets/logo.svg" alt="Logo here" class="signup-logo">
+        <form action="/index.html" class="signup-form">
+            <div>Create a new account</div>
+            <div>It's quick and easy.</div>
+            <div class="main-signup-form">
+                <div class="signup-user-name">
+                    <input type="text" id="first-name" placeholder="First name">
+                    <input type="text" id="sur-name" placeholder="Surname">
+                </div>
+                <div class="signup-dob">
+                    <p>Date of birth</p>
+                    <div>
+                        <select name="dob" id="dob-day"></select>
+                        <select name="dob" id="dob-month"></select>
+                        <select name="dob" id="dob-year"></select>
+                    </div>
+                </div>
+                <div class="signup-gender">
+                    <p>Gender</p>
+                    <div>
+                        <div>
+                            <label for="signup-female">Female</label>
+                            <input type="radio" name="gender" id="signup-female" value="Female">
+                        </div>
+                        <div>
+                            <label for="signup-male">Male</label>
+                            <input type="radio" name="gender" id="signup-male" value="Male">
+                        </div>
+                        <div>
+                            <label for="signup-custom">Custom</label>
+                            <input type="radio" name="gender" id="signup-custom" value="Custom">
+                        </div>
+                    </div>
+                </div>
+                <div class="signup-email-pass">
+                    <input type="text" name="email" id="email" placeholder="Mobile number or email address">
+                    <input type="password" name="pass" id="pass" placeholder="New password">
+                </div>
+                <p>People who use our service may have uploaded your contact information to Facebook. <span class="signup-span">Learn more</span></p>
+                <p>By clicking Sign Up, you agree to our <span class="signup-span">Terms</span>, <span class="signup-span">Privacy Policy</span> and <span class="signup-span">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
+                <div class="signup-end">
+                    <button id="signup-btn" onclick="signup()">Sign Up</button>
+                    <a href="javascript:void(0)" id="signup-a">Already have an account?</a>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../signup.js"></script>
+</body>
+</html>
