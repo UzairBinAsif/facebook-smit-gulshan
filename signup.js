@@ -101,7 +101,7 @@ function signup() {
                         localStorage.setItem("userData", jsonData)
                         
                         let currentPage = window.location.href
-                        currentPage = currentPage.replace("pages/signup.html", "index.html")
+                        currentPage = currentPage.replace("/pages/signup.html", "/index.html")
                         setTimeout(() => {
                             window.location.replace(currentPage)
                         }, 5000);
