@@ -72,7 +72,7 @@ function signup() {
                         let timerInterval;                    
                         Swal.fire({
                             title: "Signup Success!",
-                            html: "Creating Account and Redirecting you to homepage in a sec.",
+                            html: "Creating Account and Redirecting you to login page in a sec.",
                             icon: "success",
                             timer: 5000,
                             timerProgressBar: true,
@@ -101,7 +101,7 @@ function signup() {
                         localStorage.setItem("userData", jsonData)
                         
                         setTimeout(() => {
-                            window.location.replace("/index.html")
+                            window.location.replace("/pages/login.html")
                         }, 5000);
                         
                     } else {
@@ -140,7 +140,6 @@ function signup() {
         });
     }
 }
-
 // DATE OF BIRTH LOGIC
 
 let dobSelectBoxDay = document.getElementById("dob-day")

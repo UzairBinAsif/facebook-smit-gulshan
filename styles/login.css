@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f4f7;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 320px;
+}
+
+#main-p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 500px;
+    padding-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px;
+    width: 396px;
+}
+
+#email, #pass {
+    min-width: 90%;
+    font-size: 17px;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    color: #1d2129;
+    line-height: 16px;
+    vertical-align: middle;
+    outline: none;
+}
+
+#email:focus, #pass:focus {
+    border: 1px solid #0866ff;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80vw;
+    margin-top: 100px;
+    max-width: 1024px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-btn {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 48px;
+    background-color: #0866ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.forgot-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+hr {
+    width: 100%;
+}
+
+.create-acc-btn {
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.last-div {
+    margin-top: 25px;
+}
+
+span {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+span:hover {
+    text-decoration: underline;
+}

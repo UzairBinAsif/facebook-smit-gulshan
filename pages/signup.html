@@ -52,12 +52,12 @@
                 <p>By clicking Sign Up, you agree to our <span class="signup-span">Terms</span>, <span class="signup-span">Privacy Policy</span> and <span class="signup-span">Cookies Policy.</span> You may receive SMS notifications from us and can opt out at any time.</p>
                 <div class="signup-end">
                     <button id="signup-btn" onclick="signup()">Sign Up</button>
-                    <a href="javascript:void(0)" id="signup-a">Already have an account?</a>
+                    <a href="javascript:void(0)" onclick="event.preventDefault(); window.location.href = '/pages/login.html'" id="signup-a">Already have an account?</a>
                 </div>
             </div>
         </form>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../signup.js"></script>
+    <script src="../scripts/signup.js"></script>
 </body>
 </html>
